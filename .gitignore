@@ -102,4 +102,5 @@ dist
 
 # TernJS port file
 .tern-port
-# Cambio en .gitignore para nuevo commit
+# Peacock VScode extension
+.vscode

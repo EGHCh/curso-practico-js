@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figuras geométricas | Curso Práctico de JS</title>
+</head>
+<body>
+    <header>
+      <h1>Figuras geométricas</h1>
+      <p>Este es el primer taller del curso práctico de JS</p>
+    </header>
+    <main>
+      <div class="calculator square">
+        <h2>Calcula el área y perimetro de un cuadrado</h2>
+        <form action="">
+          <label for="InputCuadrado">Escribe cuanto mide cada lado de tu cuadrado</label>
+          <input type="number" name="lado" id="InputCuadrado">
+          <button type="button" onclick="calcularPerimetroCuadrado()">Calcular perimetro</button>
+          <button type="button" onclick="calcularAreaCuadrado()">Calcular área</button>
+        </form>
+      </div>
+      <div class="calculator triangle">
+        <h2>Calcula el área y perimetro de un Triángulo</h2>
+        <form action="">
+          <label for="LadoA">Ingrese el primer lado de su triángulo</label>
+          <input type="number" name="ladoA" id="LadoA">
+          <label for="LadoB">Ingrese el segundo lado de su triángulo</label>
+          <input type="number" name="LadoB" id="LadoB">
+          <label for="Alto">Ingrese la altura de su triángulo</label>
+          <input type="number" name="alto" id="Alto">
+          <label for="Base">Ingrese la base de su triángulo</label>
+          <input type="number" name="ladoBase" id="Base">
+          <button type="button" onclick="calcularPerimetroTriangulo()">Calcular perimetro</button>
+          <button type="button" onclick="calcularAreaTriangulo()">Calcular área</button>
+        </form>
+      </div>
+      <div class="calculator circle">
+        <h2>Calcula el área y perimetro de un circulo</h2>
+        <form action="">
+          <label for="InputCirculo">Ingresa el radio de tu circulo</label>
+          <input type="number" name="radio" id="InputCirculo">
+          <button type="button" onclick="calcularPerimetroCirculo()">Calcular perimetro</button>
+          <button type="button" onclick="calcularAreaCirculo()">Calcular área</button>
+        </form>
+      </div>
+    </main>
+    <script src="./figuras.js"></script>
+</body>
+</html>
