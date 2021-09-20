@@ -7,6 +7,7 @@ const lista1 = [
 function compareNumbers(a, b) {
   return a - b;
 };
+const listaOrdenada = lista1.sort(compareNumbers);
 
 function esPar(numero) {
    if (numero % 2 === 0) {
@@ -19,12 +20,12 @@ function esPar(numero) {
 
 let mediana;
 
-const mitadLista1 = parseInt(lista1.length / 2);
+const mitadLista1d= parseInt(lista1.length / 2);
   if (esPar(lista1.length) = true) {
-    mediana = (lista1[mitadLista1] + lista1[mitadLista1 - 1]) / 2;
+    mediana = (listaOrdenada[mitadLista1] + listaOrdenada[mitadLista1 - 1]) / 2;
     return mediana;
   } else {
-    mediana = mitadLista1;
+    mediana = listaOrdenada[mitadLista1];
     return mediana;
 };
 
